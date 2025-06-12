@@ -1,8 +1,6 @@
-// main.cpp (VERSÃO FINAL PARA APRESENTAÇÃO)
-
 #include <iostream>
 #include <map>
-#include "ClinicaFacade.h" // A única inclusão de sistema que precisamos!
+#include "ClinicaFacade.h"
 
 int main() {
     std::cout << "===============================================" << std::endl;
@@ -10,10 +8,8 @@ int main() {
     std::cout << "===============================================" << std::endl;
     std::cout << "Data: 12 de Junho de 2025." << std::endl;
 
-    // 1. O sistema inteiro é inicializado com a criação da Facade.
     ClinicaFacade clinica;
 
-    // 2. Definimos os dados COMPLETOS para nossos atores
     // --- Paciente 1 ---
     std::map<std::string, std::string> dadosPaciente1;
     dadosPaciente1["cpf"] = "111.222.333-44";
