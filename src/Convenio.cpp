@@ -1,17 +1,16 @@
-// src/Convenio.cpp
+
 
 #include "Convenio.h"
 #include "Consulta.h"
 #include "Paciente.h"
 #include <iostream>
-#include <random> // Para gerar um número de guia "aleatório"
+#include <random>
 
 Convenio::Convenio(const std::string& nome) : nome(nome), status("Nenhuma Guia Ativa") {}
 
 Convenio::~Convenio() {}
 
 std::string Convenio::gerarGuia(const Consulta& consulta) {
-    // Simula a geração de um número de guia aleatório
     std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_int_distribution<> distrib(100000, 999999);
@@ -23,7 +22,6 @@ std::string Convenio::gerarGuia(const Consulta& consulta) {
 }
 
 bool Convenio::verificarElegibilidade(const Paciente& paciente) const {
-    // Em um sistema real, isso consultaria um banco de dados ou uma API.
     std::cout << "-> [" << this->nome << "] Verificando elegibilidade para " << paciente.getNome() << "... Elegivel!" << std::endl;
     return true;
 }

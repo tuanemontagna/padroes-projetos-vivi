@@ -1,9 +1,5 @@
-// src/Paciente.cpp
-
 #include "Paciente.h"
 #include <iostream>
-
-// #include "Consulta.h" // Incluir quando a lógica real for implementada
 
 Paciente::Paciente(const std::string& cpf, const std::string& nome, const std::string& dataNascimento, const std::string& telefone, const std::string& planoSaude)
     : Pessoa(cpf, nome, dataNascimento, telefone), planoSaude(planoSaude) {
@@ -11,8 +7,6 @@ Paciente::Paciente(const std::string& cpf, const std::string& nome, const std::s
 
 Paciente::~Paciente() {
 }
-
-// --- Implementações Temporárias (Placeholders) ---
 
 void Paciente::agendarConsulta(Consulta& consulta) {
     std::cout << "Paciente " << this->nome << " chamou o metodo 'agendarConsulta'." << std::endl;

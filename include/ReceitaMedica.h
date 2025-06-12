@@ -1,27 +1,21 @@
-// include/ReceitaMedica.h
 
 #ifndef RECEITAMEDICA_H
 #define RECEITAMEDICA_H
 
 #include <string>
-#include <vector>     // Para usar o container std::vector
-#include "Medicamento.h" // Precisamos da definição completa de Medicamento
+#include <vector>
+#include "Medicamento.h"
 
 class Medico;
 class Paciente;
 
-/**
- * @class ReceitaMedica
- * @brief Representa uma receita emitida por um médico para um paciente.
- * Contém uma lista de medicamentos e orientações.
- */
 class ReceitaMedica {
 private:
     std::string orientacoes;
     std::string dataEmissao;
     Medico* medico;
     Paciente* paciente;
-    std::vector<Medicamento> medicamentos; // Uma lista de objetos Medicamento
+    std::vector<Medicamento> medicamentos;
 
 public:
     ReceitaMedica(Medico* medico, Paciente* paciente, const std::string& dataEmissao);
@@ -33,4 +27,4 @@ public:
     void notificarPaciente();
 };
 
-#endif // RECEITAMEDICA_H
+#endif 

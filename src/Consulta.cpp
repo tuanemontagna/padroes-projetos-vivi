@@ -1,4 +1,3 @@
-// src/Consulta.cpp
 
 #include "Consulta.h"
 #include "Medico.h"
@@ -36,12 +35,9 @@ void Consulta::emitirReceita() {
 }
 
 void Consulta::emitirLaudo() {
-    // Este método está no diagrama mas não foi solicitado para implementação detalhada.
-    // Deixado como placeholder.
     std::cout << "-> Emitindo laudo para a consulta do paciente " << this->paciente->getNome() << "." << std::endl;
 }
 
-// Implementação dos Getters
 std::string Consulta::getData() const { 
     return this->data; 
 }

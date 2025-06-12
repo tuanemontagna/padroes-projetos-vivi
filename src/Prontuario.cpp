@@ -1,13 +1,11 @@
-// src/Prontuario.cpp
-
 #include "Prontuario.h"
 #include "Paciente.h"
 #include "ReceitaMedica.h"
 #include <iostream>
-#include <string> // Para usar std::to_string
+#include <string>
 
 Prontuario::Prontuario(Paciente* paciente) : paciente(paciente) {
-    this->historico = "Prontuario criado em " + std::to_string(2025) + ".\n"; // Usando 2025 como exemplo
+    this->historico = "Prontuario criado em " + std::to_string(2025) + ".\n";
 }
 
 Prontuario::~Prontuario() {}

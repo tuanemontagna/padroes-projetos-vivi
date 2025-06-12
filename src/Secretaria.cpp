@@ -1,9 +1,7 @@
-// src/Secretaria.cpp
-
 #include "Secretaria.h"
 #include "Agenda.h"
 #include "Paciente.h"
-#include "Convenio.h" // Inclusão necessária para o método de pagamento
+#include "Convenio.h"
 #include <iostream>
 
 Secretaria::Secretaria(const std::string& nome, const std::string& matricula_id)
@@ -27,7 +25,6 @@ void Secretaria::cancelarConsulta(Agenda& agenda, const Consulta& consulta) {
 }
 
 void Secretaria::cadastrarPaciente(Paciente& paciente) {
-    // Em um sistema real, isso adicionaria o paciente a um banco de dados.
     std::cout << "\nSecretaria " << this->nome << " cadastrou o(a) paciente: " << paciente.getNome() << "." << std::endl;
 }
 

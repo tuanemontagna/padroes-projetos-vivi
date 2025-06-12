@@ -1,13 +1,10 @@
-// src/Lembrete.cpp
-
 #include "Lembrete.h"
-#include "Consulta.h" // Incluímos para aceder aos detalhes da consulta
-#include "Medico.h"   // Para obter o nome do médico
-#include "Paciente.h" // Para obter o nome do paciente
+#include "Consulta.h"
+#include "Medico.h"
+#include "Paciente.h"
 #include <iostream>
 
 Lembrete::Lembrete(Consulta* consulta) : consulta(consulta) {
-    // Ao criar um lembrete, já formatamos a mensagem padrão.
     this->formatarMensagem();
 }
 

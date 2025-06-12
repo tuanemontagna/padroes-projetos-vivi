@@ -1,5 +1,3 @@
-// include/Convenio.h
-
 #ifndef CONVENIO_H
 #define CONVENIO_H
 
@@ -8,18 +6,11 @@
 class Consulta;
 class Paciente;
 
-/**
- * @class Convenio
- * @brief Gerencia a comunicação com um convênio de saúde.
- *
- * Responsável por gerar guias de autorização, verificar elegibilidade
- * e processar pagamentos.
- */
 class Convenio {
 private:
-    std::string nome;   // Ex: "Unimed", "SulAmerica"
-    std::string guia;   // Número da guia de autorização
-    std::string status; // Ex: "Pendente", "Aprovado", "Negado"
+    std::string nome;
+    std::string guia;
+    std::string status;
 
 public:
     Convenio(const std::string& nome);
@@ -31,4 +22,4 @@ public:
     bool processarPagamento(double valor);
 };
 
-#endif // CONVENIO_H
+#endif 

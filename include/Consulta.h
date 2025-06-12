@@ -1,4 +1,3 @@
-// include/Consulta.h
 
 #ifndef CONSULTA_H
 #define CONSULTA_H
@@ -8,10 +7,6 @@
 class Medico;
 class Paciente;
 
-/**
- * @class Consulta
- * @brief Representa uma consulta médica agendada no sistema.
- */
 class Consulta {
 private:
     std::string data;
@@ -32,7 +27,6 @@ public:
     void emitirReceita();
     void emitirLaudo();
 
-    // Getters para checagem na agenda e outras classes
     std::string getData() const;
     std::string getHora() const;
     Paciente* getPaciente() const;
@@ -40,4 +34,4 @@ public:
     Medico* getMedico() const;
 };
 
-#endif // CONSULTA_H
+#endif 

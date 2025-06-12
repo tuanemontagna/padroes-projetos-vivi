@@ -1,5 +1,3 @@
-// src/Pessoa.cpp
-
 #include "Pessoa.h"
 
 Pessoa::Pessoa(const std::string& cpf, const std::string& nome, const std::string& dataNascimento, const std::string& telefone)
