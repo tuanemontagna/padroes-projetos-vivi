@@ -12,7 +12,7 @@ O objetivo central foi modelar um sistema de gestão para uma clínica médica, 
 
 A arquitetura do sistema foi desenhada para ser desacoplada e organizada. Para isso, foram utilizados os seguintes padrões de projeto do "Gang of Four" (GoF):
 
-### Padrão Factory Method (e Abstract Factory)
+### Padrão Factory Method 
 
 * **Problema:** A criação de objetos como `Medico`, `Paciente` e `Secretaria` estava espalhada pelo código cliente (inicialmente, `main.cpp`). Isso tornava o sistema rígido, pois qualquer alteração no construtor de uma classe exigiria mudanças em vários locais.
 * **Solução:** Foi implementado o padrão `Factory` para delegar a responsabilidade da criação de objetos a classes especialistas (as "Fábricas").
