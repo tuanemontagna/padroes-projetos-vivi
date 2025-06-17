@@ -21,7 +21,7 @@ A arquitetura do sistema foi desenhada para ser desacoplada e organizada. Para i
     * Uma `SecretariaFactory` independente também foi criada.
 * **Benefícios:** A criação de objetos é centralizada, o código cliente é desacoplado das classes concretas e o sistema torna-se muito mais flexível para adicionar novos tipos de atores no futuro.
 
-### Padrão Facade (Fachada)
+### Padrão Facade 
 
 * **Problema:** Após a criação de todas as classes do sistema (`Agenda`, `Factories`, `Prontuario`, etc.), o cliente precisaria de conhecer e orquestrar múltiplos objetos para realizar uma única tarefa, como agendar uma consulta. Isso cria uma barreira de complexidade.
 * **Solução:** Foi implementada a classe `ClinicaFacade`, que serve como uma "fachada" ou um ponto de entrada único e simplificado para todo o subsistema da clínica.
